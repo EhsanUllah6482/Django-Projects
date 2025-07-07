@@ -1,0 +1,9 @@
+<title>{{ m|title }}</title>
+
+<h1>{{ m|title }} months challenge</h1>
+{% include "challenges/includes/header.html" %}
+{% if text is not None %}
+  <h2>{{ text }}</h2>
+{% else %}
+  <h2>There is no challenge for this month</h2>
+{% endif %}
